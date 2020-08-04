@@ -8,6 +8,8 @@ Make at least 1 commit per question.
 
 What is the difference between Dijkstra's Algorithm and A*. Why would one use Dijkstra's over A* and vice versa?
 
+Dijkstra's Algorithm is different from A* in that it doesn't take information in about the robot, which means it wouldn't be able to plan around an obstacle if it was in its path unlike A* which takes into account an occupancy grid. So if you were moving a robot and were expecting that its environment may change or that it would have obstacles in its way, you would use A* to be able to find spot these and find the shortest path while avoiding them. However, if you were simply just finding the shortest path from a starting point to an ending point, and you did not have to be aware of any obstacles, you could use Dijkstra's over A* as Dijkstra is optimal in that it will always find the absolute shortest path.
+
 ## Question 2
 
 Consider the following robot in a grid 2D grid world:
