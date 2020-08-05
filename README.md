@@ -84,3 +84,15 @@ Pass 10: nC = (12,1) ==> stop condition
 ## Question 3
 
 List out the cells that represent the shortest path you found above. Then list the commands that would need to be sent to the robot to follow this path. The robot in question moves perfectly without any error, and reponds to two commands: it can either move forward a specified number of cells with `move(cells)`, or it can turn with `turn(radians)`. The robot should end at the goal the same direction at which it faced originally.
+
+Path: (4,2), (5,1), (6,1), (7,1), (8,1), (9, 1), (10,1), (11,1), (12, 1)
+Commands: Pass 1: turn(-pi/4) & move(1)
+	Pass 2: move(1)
+	Pass 3: turn(pi/4) & move(1)
+	Pass 4: move(1)
+	Pass 5: move(1)
+	Pass 6: move(1)
+	Pass 7: move(1)
+	Pass 8: move(1)
+	Pass 9: move(1)
+	Pass 10: move(1)
